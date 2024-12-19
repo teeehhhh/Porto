@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="navbar">
-    <div class="logo">mariyo!</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="porto.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="github-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">mariyo!</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="porto.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="github-icon">
         <a href="https://github.com/teeehhhh" target="_blank">
-        <img src="assets\git.png" alt="GitHub Logo" width="30" height="30">
-     </a>
-</div>
-  </header>
+          <img src="assets/git.png" alt="GitHub Logo" width="30" height="30" />
+        </a>
+      </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm a passionate designer creating amazing digital experiences.</p>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm a passionate designer creating amazing digital experiences.</p>
+      </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-container">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <img src="assets/Banner 2.jpg" alt="Project 1" />
+            <div class="project-content">
+              <h3>Es Coklat Taman Sebelas</h3>
+              <p><strong>Client:</strong> Aprian K.</p>
+              <p><strong>Brand:</strong> Es Coklat Taman Sebelas</p>
+              <p>
+                <strong>About:</strong> A creative project for a local brand.
+              </p>
+            </div>
+          </div>
 
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img src="assets/final.jpg" alt="Project 2" />
+            <div class="project-content">
+              <h3>Project 2</h3>
+              <p><strong>About:</strong> Description for Project 2.</p>
+            </div>
+          </div>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-container">
+          <!-- Project 3 -->
+          <div class="project-card">
+            <img src="assets/Healing Energy On Me 1.png" alt="Project 3" />
+            <div class="project-content">
+              <h3>Project 3</h3>
+              <p><strong>About:</strong> Description for Project 3.</p>
+            </div>
+          </div>
 
-        <div class="project-card">
-          <img src="assets/Banner 2.jpg" alt="Project 1">
-          <div class="project-content">
-            <h3>Es Coklat Taman Sebelas</h3>
-            <p><strong>Client:</strong> Aprian K.</p>
-            <p><strong>Brand:</strong> Es Coklat Taman Sebelas</p>
-            <p><strong>About:</strong> -</p>
+          <!-- Project 4 -->
+          <div class="project-card">
+            <iframe
+              width="315"
+              height="315"
+              src="https://www.youtube.com/embed/Y0hsIY8xtVo?si=K5-KmM8y2rcusf-f"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="project-content">
+              <h3>Project 4</h3>
+              <p><strong>About:</strong> Description for Project 4.</p>
+            </div>
           </div>
         </div>
-
-        <div class="project-card">
-          <img src="assets/final.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>-</p>
-        </div>
-
-        <div class="project-card">
-          <img src="assets/Healing Energy On Me 1.png" alt="Project 3">
-          <h3>Project 3</h3>
-          <p></p>
-        </div>
-
-        <div class="project-card">
-          <img src="assets/final.jpg" alt="Project 3">
-          <h3>Project 4</h3>
-          <p></p>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Muhammad Al Fatih Nurseto | All Rights Reserved</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Muhammad Al Fatih Nurseto | All Rights Reserved</p>
+    </footer>
+  </body>
 </html>

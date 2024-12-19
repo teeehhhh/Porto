@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo">mariyo!</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="porto.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="github-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="navbar.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">mariyo!</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="porto.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="github-icon">
         <a href="https://github.com/teeehhhh" target="_blank">
-        <img src="assets\git.png" alt="GitHub Logo" width="30" height="30">
-     </a>
-</div>
-  </header>
+          <img src="assets/git.png" alt="GitHub Logo" width="30" height="30" />
+        </a>
+      </div>
+    </header>
 
-  <section id="home" class="home-section">
-    <div class="content-container">
+    <section id="home" class="home-section">
+      <div class="content-container">
         <div class="text-container">
-            <h1 class="animate-text">Hello Guys, I'm <br><span>Muhammad Al Fatih Nurseto</span></h1>
-            <p class="animate-text">Welcome to my portfolio</p>
+          <h1 class="animate-text">
+            Hello Guys, I'm <br /><span>Muhammad Al Fatih Nurseto</span>
+          </h1>
+          <p class="animate-text">Welcome to my portfolio</p>
         </div>
         <div class="image-container">
-            <div class="circle-image animate-image">
-                <img src="assets/Fatih.png" alt="Profile Picture">
-            </div>
+          <div class="circle-image animate-image">
+            <img src="assets/Fatih.png" alt="Profile Picture" />
+          </div>
         </div>
-    </div>
-</section>
-  <footer>
-    <p>&copy; 2024 Muhammad Al Fatih Nurseto | All rights reserved.</p>
-  </footer>
-</body>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Muhammad Al Fatih Nurseto | All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+      }
+    </script>
+  </body>
 </html>
